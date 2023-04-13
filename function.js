@@ -3,7 +3,8 @@ function solution(D) {
 const daysOfWeek = { "Mon": 0, "Tue": 0, "Wed": 0, "Thu": 0, "Fri": 0, "Sat": 0, "Sun": 0 };
 // Convert the input dictionary to an array of [date, value] pairs
 const data = Object.entries(D).map(([date, value]) => [new Date(date), value]);   
-// Sort the data by date   data.sort(([date1], [date2]) => date1 - date2);  
+// Sort the data by date   
+  data.sort(([date1], [date2]) => date1 - date2);  
 // Iterate over each day and update the corresponding value in daysOfWeek  
 for (let i = 0; i < data.length; i++) {    
 const [date, value] = data[i];   
